@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.page1{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: azure; */
+    background-image: linear-gradient(150deg, rgba(255, 192, 203, 0.932),rgba(255, 255, 0, 0.692));
+    position: relative;
+}
+
+.page1>h1{
+    text-align: center;
+    padding: 80px 0 20px 0;
+    font-family: math;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* color: transparent; */
+    /* -webkit-text-stroke-color: rgb(24, 26, 26);
+    -webkit-text-stroke-width: 2px; */
+}
+
+
+.winner{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 100px; 
+    margin-bottom: 250px;
+}
+.hide{
+    display: none;
+}
+
+.winner h1{
+    font-size: 2rem;
+    font-family: serif;
+    color: rgb(111, 0, 255);
+    font-weight: 400;
+}
+
+.winner p{
+    font-size: 1.2rem;
+}
+
+.winner span{
+    font-size: 1.8rem;
+    padding: 5px;
+    color: orangered;
+}
+
+.winner>button{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    /* text-transform: uppercase; */
+    background-color: rgba(128, 255, 0, 0.493);   
+    font-family: serif;
+}
+
+.winner>button:hover{
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: rgba(255, 46, 46, 0.911);
+    font-weight: 600;
+}
+
+.buttonsContainer{
+    /* background-color: azure; */
+
+    /* border-top: 1px solid red; */
+    /* margin-top: 180px; */
+    height: 80vh;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 350px;
+    height: 350px;
+    gap: 4px;
+}
+
+.buttons button{
+    font-size: 2.8rem;
+    font-family: sans-serif;
+    border: 1px solid rgba(235, 200, 156, 0.719);
+    border-radius: 10px;
+    outline: none;
+    /* background-color: antiquewhite; */
+    background-color: azure;
+    color: red;
+    transition-duration: 500ms;
+}
+
+.buttons button:hover{
+    background-color: rgb(192, 247, 247);
+}
+
+
+#reset{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 1px;
+    font-weight: 600;
+    font-family: math;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    border: 2px solid teal;
+    color: rgb(255, 68, 0);
+    /* background-color: rgba(255, 165, 165, 0.61); */
+    background-color: transparent;
+}
+
+#reset:hover{
+    color: teal;
+    border: 2px solid coral;
+    font-family: 'Times New Roman', Times, serif;
+}
